@@ -17,6 +17,8 @@ store.dispatch({ type: 'todos/todoAdded', payload: 'Try creating a store' });
 console.log('Dispatching action');
 store.dispatch({ type: 'todos/todoAdded', payload: 'Action check after the enhancer.' });
 console.log('Dispatch complete');
+store.dispatch({ type: 'todos/todoAdded', payload: 'Learn about actions' });
+console.log('State after dispatch: ', store.getState());
 unsubscribe();
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
